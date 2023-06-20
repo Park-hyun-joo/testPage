@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML CSS 적용해보기</title>
+    <!-- 외부 스타일 시트를 추가하는 방법 2가지  (여러개의 파일을 한번에 연결할 수도 있다. )-->
+    <!-- link가 속도 측면에서 우수해 더 많이 사용한다.  -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- 두번째 방법 -->
+    <link rel="stylesheet" type="text/css" href="css/style2.css">
+    
+    <style type="text/css">
+        @import url("css/style.css");
+    </style>
+    <!-- 외부 스타일 시트를 연결하는 것은 head 태그 내에서만 가능합니다.-->
+</head>
+<body>
+    <!-- 태그 선택자로 작성한 예시 -->
+    <h1>h1 태그입니다.</h1>
+    <h2>h2 태그입니다.</h2>
+    <h3>h3 태그입니다.</h3>
+    <hr>
+    <p>p 태그입니다.</p>
+    <p>p 태그입니다. 2</p>
+    <br>
+    <img src ="static/img/dog_test2.jpg" alt="강아지">
+    <div></div>
+
+    <!-- class와 id 를 사용한 css 실습해보기-->
+    <!-- 1. class 선택자  - 스타일 지정시 가장 많이 이용, 여러개 요소에 지정 가능-->
+    <span class="orange">여기 보소</span>
+    <!-- 태그 선택자보다 우선순위가 높은 class 선택자 -->
+    <div id="example" class="orange">이것이 id로 작성한 영역</div>
+    <!-- 태그가 베이스 - id 와 class가 계속 상속받아 사용된다 -->
+    <!-- id와 태그 선택자를 동시에 사용했을 경우, 태그 영역을 id가 상속받음-->
+    <!-- 2. id 선택자 페이지당 하나만 갖는 단일 값 # 사용-->
+    <div>
+        <span>
+            div 확인하기
+        </span>
+    </div>
+    <!-- form태그 보충하면서 볼 내용 -->
+    <form>
+        <input type="button" value="버튼">
+        <input type="text" value="id" placeholder="아이디" style="width: 20px;">
+        <input type="password" value="password" placeholder="비밀번호">
+        <input type="number" value="0">
+    </form>
+</body>
+</html>

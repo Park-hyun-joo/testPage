@@ -1,0 +1,65 @@
+h1{
+    color: red;
+    font-size:
+    font-style: normal;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2{
+    color: blue;
+    text-decoration: overline;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h3{
+    color: green;
+    /* offset-x | offset-y | blur-radius | color 예제*/
+    text-shadow: 3px 2px 12px #000000;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: italic;
+}
+hr{
+    border: 5px;
+    border-style:groove;
+    color: yellow;
+    border-width: 10px;
+}
+p{
+    background-color: black;
+    color: white;
+}
+img{
+    cursor: pointer;
+}
+img:hover{
+    border-radius: 55px;
+}
+
+/* class로 css 적용하는 법 */
+
+.orange{
+    width: 120px;
+    height: 100px;
+    border-color: orangered;
+    background-color: orange;
+    border-radius: 40px;
+}
+
+/* 아이디로 css 적용하는 법 */
+#example {
+    font: 700;
+    font-family: sans-serif;
+    font-style: italic;
+    background-color: blueviolet;
+}
+div{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: 3px red solid;
+    background-color: pink;
+}
+
+
+span{
+    background-color: aquamarine;
+}

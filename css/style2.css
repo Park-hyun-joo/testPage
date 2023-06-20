@@ -1,0 +1,9 @@
+/* div를 여러개 선언하면 이런일이 벌어진다 */
+div {
+    background-color: aquamarine;
+    border: 1px;
+    border-radius: 10px;
+    border-color: blue;
+    color: white;
+    align-items: center;
+}
